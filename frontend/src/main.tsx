@@ -8,7 +8,6 @@ import RoomsPage from "./pages/RoomsPage";
 import RoomDetailPage from "./pages/RoomDetailPage";
 import ReportsPage from "./pages/ReportsPage";
 import "antd/dist/reset.css";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const qc = new QueryClient();
 const router = createBrowserRouter([
@@ -35,7 +34,6 @@ root.render(
   <React.StrictMode>
     <QueryClientProvider client={qc}>
       <RouterProvider router={router} />
-      <SpeedInsights />
     </QueryClientProvider>
   </React.StrictMode>
 );
